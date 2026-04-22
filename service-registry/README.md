@@ -10,9 +10,9 @@ Built using **Spring Cloud Netflix Eureka Server**, this service is the first co
 
 ```
                     ┌──────────────────────────────┐
-                    │      Service Registry         │
-                    │   (Netflix Eureka Server)     │
-                    │        Port: 8761             │
+                    │      Service Registry        │
+                    │   (Netflix Eureka Server)    │
+                    │        Port: 8761            │
                     └───────────┬──────────────────┘
                                 │
           ┌─────────────────────┼──────────────────────┐

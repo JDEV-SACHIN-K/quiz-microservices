@@ -8,7 +8,7 @@ A fully distributed, production-style **Quiz Application** built from the ground
 
 ```
                         ┌─────────────────────────────┐
-                        │         Client / Postman    │
+                        │       Client / Postman      │
                         └──────────────┬──────────────┘
                                        │ HTTP Request
                                        ▼

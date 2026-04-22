@@ -359,5 +359,4 @@ For deep-dives into each service, see:
 - Implementing **orchestration logic** across service boundaries (quiz scoring via delegation)
 
 ---
-
-*Built as part of Telusko's Microservices tutorial series. Extended and fully documented.*
+## HAPPY CODING !

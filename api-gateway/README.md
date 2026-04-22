@@ -14,14 +14,14 @@ Built with **Spring Cloud Gateway**, it integrates seamlessly with Eureka for se
          All requests → localhost:8765
                     │
        ┌────────────▼─────────────────────┐
-       │           API Gateway             │
-       │         Port: 8765                │
-       │                                   │
-       │  /question-service/** ──────────► │ ──► QUESTION-SERVICE (8080)
-       │  /quiz-service/**     ──────────► │ ──► QUIZ-SERVICE (8090)
-       │                                   │
-       │  (Resolves via Eureka registry)   │
-       └───────────────────────────────────┘
+       │           API Gateway            │
+       │         Port: 8765               │
+       │                                  │
+       │  /question-service/** ──────────►│ ──► QUESTION-SERVICE (8080)
+       │  /quiz-service/**     ──────────►│ ──► QUIZ-SERVICE (8090)
+       │                                  │
+       │  (Resolves via Eureka registry)  │
+       └──────────────────────────────────┘
 ```
 
 Without the gateway, a client would need to know:

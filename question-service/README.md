@@ -14,8 +14,8 @@ This service follows the **Database per Service** pattern: it has its own dedica
                           │  /question-service/**
                           ▼
               ┌──────────────────────────┐
-              │     Question Service      │
-              │       Port: 8080          │
+              │     Question Service     │
+              │       Port: 8080         │
               │                          │
               │  ┌────────────────────┐  │
               │  │  QuestionController│  │

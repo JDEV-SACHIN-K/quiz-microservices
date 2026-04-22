@@ -8,32 +8,32 @@ A fully distributed, production-style **Quiz Application** built from the ground
 
 ```
                         ┌─────────────────────────────┐
-                        │         Client / Postman     │
+                        │         Client / Postman    │
                         └──────────────┬──────────────┘
                                        │ HTTP Request
                                        ▼
                         ┌─────────────────────────────┐
-                        │       API Gateway            │
-                        │    (Spring Cloud Gateway)    │
-                        │       Port: 8765             │
-                        └────────┬──────────┬──────────┘
+                        │       API Gateway           │
+                        │    (Spring Cloud Gateway)   │
+                        │       Port: 8765            │
+                        └────────┬──────────┬─────────┘
                                  │          │
                    Route:        │          │   Route:
-             /question-service/** │          │  /quiz-service/**
+            /question-service/** │         │  /quiz-service/**
                                  │          │
                ┌─────────────────▼──┐  ┌───▼──────────────────┐
-               │  Question Service  │  │     Quiz Service      │
-               │   Port: 8080       │◄─┤   Port: 8090          │
-               │   DB: PostgreSQL   │  │   DB: PostgreSQL      │
-               └────────────────────┘  └───────────────────────┘
+               │  Question Service  │  │     Quiz Service     │
+               │   Port: 8080       │◄─┤   Port: 8090         │
+               │   DB: PostgreSQL   │  │   DB: PostgreSQL     │
+               └────────────────────┘  └──────────────────────┘
                         │                        │
                         └───────────┬────────────┘
                                     │ Register & Discover
                                     ▼
                         ┌─────────────────────────────┐
-                        │      Service Registry        │
-                        │  (Netflix Eureka Server)     │
-                        │       Port: 8761             │
+                        │      Service Registry       │
+                        │  (Netflix Eureka Server)    │
+                        │       Port: 8761            │
                         └─────────────────────────────┘
 ```
 
